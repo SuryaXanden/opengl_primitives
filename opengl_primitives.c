@@ -53,16 +53,32 @@ void display()
 	if(os)	wipe();	
 	switch(ch)
 	{
-		case 1:	lines();	break;
-		case 2:	points();	break;
-		case 3:	shapes();	break;
-		case 4:	wipe();	break;
-		case 5: os=!os;	break;
-		case 0:	glutSwapBuffers();	glutPostRedisplay();	break;
+		case 1:
+			lines();
+		break;
+		case 2:
+			points();
+		break;
+		case 3:
+			shapes();
+		break;
+		case 4:
+			wipe();
+		break;
+		case 5:
+			os=!os;
+		break;
+		case 0:
+			glutSwapBuffers();
+			glutPostRedisplay();
+		break;
 		case -1: exit(0);
 	}
 }
-void menu(int keys){	ch=keys;	}
+void menu(int keys)
+{
+	ch=keys;
+}
 int main(int argc, char **argv)
 {
 	glutInit(&argc,argv);
