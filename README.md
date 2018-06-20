@@ -1,1 +1,1 @@
-# opengl_primitives
+Drawing patterns on screen using OpenGL primitives.
